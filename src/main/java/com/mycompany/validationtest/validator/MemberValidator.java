@@ -1,4 +1,4 @@
-package com.mycompany.validation.validator;
+package com.mycompany.validationtest.validator;
 
 import java.util.regex.*;
 
@@ -6,7 +6,7 @@ import org.springframework.validation.Errors;
 import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;
 
-import com.mycompany.validation.dto.MemberDto;
+import com.mycompany.validationtest.dto.MemberDto;
 
 public class MemberValidator implements Validator {
 

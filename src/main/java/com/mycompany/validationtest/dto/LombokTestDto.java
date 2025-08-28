@@ -1,4 +1,4 @@
-package com.mycompany.validation.dto;
+package com.mycompany.validationtest.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

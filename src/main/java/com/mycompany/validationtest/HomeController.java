@@ -1,4 +1,4 @@
-package com.mycompany.validation;
+package com.mycompany.validationtest;
 
 import java.text.DateFormat;
 import java.util.Date;

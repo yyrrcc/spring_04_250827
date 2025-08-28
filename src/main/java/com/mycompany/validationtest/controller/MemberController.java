@@ -1,4 +1,4 @@
-package com.mycompany.validation.controller;
+package com.mycompany.validationtest.controller;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,8 +10,8 @@ import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.mycompany.validation.dto.MemberDto;
-import com.mycompany.validation.validator.MemberValidator;
+import com.mycompany.validationtest.dto.MemberDto;
+import com.mycompany.validationtest.validator.MemberValidator;
 
 @Controller
 public class MemberController {
