@@ -11,12 +11,12 @@
 <body>
 	<h3>회원가입</h3>
 	<form action="memberJoinOk" method="get">
-		아이디 <input type="text" name="id"><br/>
+		아이디 <input type="text" name="id" value="${memberDto.id }"><br/>
 		비밀번호 <input type="password" name="pw"><br/>
 		비밀번호(확인) <input type="password" name="confirmPw"><br/>		
-		이름 <input type="text" name="name"><br/>
-		이메일 <input type="text" name="email"><br/>
-		나이 <input type="text" name="age"><br/>
+		이름 <input type="text" name="name" value="${memberDto.name }"><br/>
+		이메일 <input type="text" name="email" value="${memberDto.email }"><br/>
+		나이 <input type="text" name="age" value="${memberDto.age }"><br/>
 		<input type="submit" value="회원가입">
 	</form>
 	<hr/>

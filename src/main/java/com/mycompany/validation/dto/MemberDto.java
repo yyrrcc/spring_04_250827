@@ -15,7 +15,7 @@ public class MemberDto {
 	private String confirmPw;
 	private String name;
 	private String email;
-	private int age;
+	private Integer age; // null값 확인을 위해
 	
 	
 }
