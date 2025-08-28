@@ -20,8 +20,8 @@ public class MemberController {
 	public String memberJoin() {
 		return "memberJoin";
 	}
-	@RequestMapping (value = "/meberJoinOk")
-	public String meberJoinOk(@ModelAttribute("memberDto") MemberDto memberDto, Model model, BindingResult result) {
+	@RequestMapping (value = "/memberJoinOk")
+	public String memberJoinOk(@ModelAttribute("memberDto") MemberDto memberDto, Model model, BindingResult result) {
 		MemberValidator memberValidator = new MemberValidator();
 		memberValidator.validate(memberDto, result);
 		// 에러가 있는지 확인 (유효성 체크)
@@ -33,10 +33,11 @@ public class MemberController {
 				errorMsgs.add(errorMsg);
 			}
 			model.addAttribute("signupError", "회원 가입에 실패하였습니다.");
-			model.addAttribute("errorMsgs", "");
+			model.addAttribute("errorMsgs", errorMsgs);
 			return "memberJoin";
 		}
-		return "meberJoinOk";
+		model.addAttribute("memberDto", memberDto);
+		return "memberJoinOk";
 	}
 
 }

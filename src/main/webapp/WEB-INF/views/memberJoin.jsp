@@ -10,7 +10,7 @@
 </head>
 <body>
 	<h3>회원가입</h3>
-	<form action="meberJoinOk" method="get">
+	<form action="memberJoinOk" method="get">
 		아이디 <input type="text" name="id"><br/>
 		비밀번호 <input type="password" name="pw"><br/>
 		비밀번호(확인) <input type="password" name="confirmPw"><br/>		
